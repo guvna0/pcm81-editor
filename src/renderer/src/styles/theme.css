@@ -1,0 +1,111 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Segoe UI", sans-serif;
+  --bg: #07090f;
+  --panel: #101522;
+  --panel-alt: #131a2a;
+  --line: #2a3249;
+  --text: #e6ebff;
+  --muted: #9ba6c7;
+  --accent: #6f7dff;
+  --accent-strong: #90b4ff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #121831, var(--bg) 48%);
+  color: var(--text);
+}
+
+.app-shell { padding: 1.2rem; min-height: 100vh; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.header h1 { margin: 0; font-size: 1.3rem; }
+.header p { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.86rem; }
+
+.header__actions { display: flex; gap: 0.6rem; }
+.button {
+  border: 1px solid transparent;
+  background: linear-gradient(180deg, var(--accent), #4f5dd7);
+  color: white;
+  border-radius: 999px;
+  padding: 0.56rem 1rem;
+  cursor: pointer;
+}
+.button--ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.capsule-nav {
+  margin: 1rem 0;
+  display: inline-flex;
+  gap: 0.4rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: #0e1220;
+  border: 1px solid var(--line);
+}
+.capsule-nav__button {
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.48rem 0.9rem;
+  cursor: pointer;
+}
+.capsule-nav__button--active { background: var(--panel-alt); color: var(--accent-strong); }
+
+.workspace { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1rem; }
+.panel {
+  border-radius: 0.9rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #131a2b, #0e1320);
+}
+.panel--placeholder { min-height: 280px; display: grid; align-content: center; }
+.panel__title-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; }
+.panel__title-row span { color: var(--muted); font-size: 0.85rem; }
+
+.flow-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+.flow-node {
+  background: #1a2237;
+  border: 1px solid #3a4463;
+  border-radius: 0.7rem;
+  padding: 0.8rem;
+  min-width: 130px;
+  position: relative;
+}
+.flow-arrow { position: absolute; right: -0.8rem; color: var(--accent-strong); }
+.generic-flow { margin-top: 0.8rem; color: var(--muted); }
+
+.dial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; }
+.dial { background: #141c30; border: 1px solid #303d60; border-radius: 0.7rem; padding: 0.65rem; text-align: center; }
+.dial label { font-size: 0.82rem; color: var(--muted); display: block; margin-bottom: 0.5rem; }
+.dial__knob {
+  width: 86px;
+  height: 86px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #44527a;
+  background: radial-gradient(circle at 35% 30%, #303d63, #151c30 65%);
+  position: relative;
+  cursor: ns-resize;
+}
+.dial__indicator {
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  width: 2px;
+  height: 24px;
+  background: var(--accent-strong);
+  transform-origin: 50% 36px;
+}
+.dial__value { margin-top: 0.5rem; font-size: 0.84rem; font-variant-numeric: tabular-nums; }
+.dial__input { width: 100%; background: #0d1220; border: 1px solid var(--line); color: var(--text); border-radius: 0.5rem; padding: 0.5rem; }
+
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.62); display: grid; place-items: center; }
+.modal { width: 440px; background: #12192a; border: 1px solid var(--line); border-radius: 0.85rem; padding: 1rem; display: grid; gap: 0.7rem; }
+.modal select { width: 100%; margin-top: 0.35rem; background: #090d17; color: var(--text); border: 1px solid var(--line); border-radius: 0.4rem; padding: 0.45rem; }
+.modal__actions { display: flex; justify-content: flex-end; gap: 0.6rem; margin-top: 0.4rem; }
