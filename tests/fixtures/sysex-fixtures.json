@@ -1,0 +1,12 @@
+[
+  {
+    "name": "pcm81-program-dump-id-0x10",
+    "bytesHex": "F0 06 09 10 00 00 7F F7",
+    "expectedProductId": "0x10"
+  },
+  {
+    "name": "pcm81-program-dump-id-0x07",
+    "bytesHex": "F0 06 09 07 00 00 7F F7",
+    "expectedProductId": "0x07"
+  }
+]

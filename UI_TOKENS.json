@@ -1,0 +1,133 @@
+{
+  "$schema": "https://tokens.studio/schemas/v1.json",
+  "meta": {
+    "name": "PCM81 Editor Tokens",
+    "version": "1.0.0",
+    "mode": "dark"
+  },
+  "color": {
+    "bg": {
+      "base": "#0B0E14",
+      "surface1": "#111826",
+      "surface2": "#182235",
+      "surface3": "#22314A"
+    },
+    "border": {
+      "subtle": "#2E3B54",
+      "strong": "#3F5273",
+      "focus": "#7CC4FF"
+    },
+    "text": {
+      "primary": "#E9EEF8",
+      "secondary": "#9DAEC8",
+      "muted": "#72839F",
+      "inverse": "#0B0E14"
+    },
+    "accent": {
+      "brand": "#4DA3FF",
+      "pro": "#BE7BFF",
+      "success": "#3BC87D",
+      "warning": "#F3B95B",
+      "error": "#FF6B6B",
+      "midiPulse": "#39D98A"
+    },
+    "state": {
+      "hoverOverlay": "rgba(255,255,255,0.06)",
+      "activeOverlay": "rgba(255,255,255,0.10)",
+      "disabledOverlay": "rgba(255,255,255,0.20)",
+      "focusRing": "rgba(124,196,255,0.8)"
+    }
+  },
+  "spacing": {
+    "0": 0,
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "8": 32,
+    "10": 40,
+    "12": 48,
+    "16": 64,
+    "20": 80
+  },
+  "radius": {
+    "none": 0,
+    "sm": 6,
+    "md": 10,
+    "lg": 14,
+    "xl": 18,
+    "pill": 999
+  },
+  "border": {
+    "width": {
+      "hairline": 1,
+      "regular": 2,
+      "heavy": 3
+    }
+  },
+  "shadow": {
+    "xs": "0 1px 2px rgba(0,0,0,0.2)",
+    "sm": "0 2px 6px rgba(0,0,0,0.25)",
+    "md": "0 6px 16px rgba(0,0,0,0.35)",
+    "lg": "0 12px 32px rgba(0,0,0,0.45)",
+    "focus": "0 0 0 2px rgba(124,196,255,0.8)"
+  },
+  "typography": {
+    "fontFamily": {
+      "ui": "Inter, 'Segoe UI', Roboto, sans-serif",
+      "mono": "'JetBrains Mono', Consolas, monospace"
+    },
+    "size": {
+      "displaySm": 28,
+      "titleLg": 22,
+      "titleMd": 18,
+      "titleSm": 16,
+      "bodyLg": 15,
+      "bodyMd": 14,
+      "bodySm": 13,
+      "labelMd": 12,
+      "labelSm": 11
+    },
+    "lineHeight": {
+      "displaySm": 36,
+      "titleLg": 30,
+      "titleMd": 26,
+      "titleSm": 24,
+      "bodyLg": 24,
+      "bodyMd": 22,
+      "bodySm": 20,
+      "labelMd": 16,
+      "labelSm": 14
+    },
+    "weight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "letterSpacing": {
+      "normal": 0,
+      "caps": 0.24
+    }
+  },
+  "size": {
+    "topBarHeight": 64,
+    "tabBarHeight": 48,
+    "rightRailWidth": 360,
+    "controlHeight": 36,
+    "buttonHeight": 40,
+    "dialDiameter": 72,
+    "proTagHeight": 14
+  },
+  "zIndex": {
+    "base": 0,
+    "sticky": 100,
+    "dropdown": 300,
+    "toast": 500,
+    "modalBackdrop": 800,
+    "modal": 900,
+    "debugOverlay": 1000
+  }
+}
