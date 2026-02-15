@@ -1,17 +1,26 @@
 # Modifier Music - PCM81 Editor
 
-Electron + React scaffolding for a production PCM81 desktop editor.
+This is an easy-to-use editor for the Lexicon PCM81 effects unit.
 
-## Current scope
+## getting Started
 
-- Modern dark-mode UI shell with capsule navigation (no tabs).
-- Placeholder control panel with high-contrast dials and required interactions.
-- Data-driven PCM81 algorithm catalogue with provenance metadata.
-- Catalogue validation and Vitest tests for the verified minimum algorithm names.
+If you are new to this project, please read the [Start Here](docs/1_Introduction.md) guide in the `docs` folder!
 
-## Not yet implemented
+**Quick Links:**
 
-- SysEx decode/encode, parameter mapping, algorithm-ID decoding, device store/write workflows.
-- Live MIDI device interrogation and bank/program workflows.
+1. [Introduction & Key Terms](docs/1_Introduction.md)
+2. [Setup Guide](docs/2_Setup.md)
+3. [How to Run the Program](docs/3_Running.md)
+4. [Project Structure](docs/4_ProjectStructure.md)
 
-> SysEx work is intentionally blocked until authoritative PCM81 MIDI implementation documentation is present in-repo.
+---
+
+## Technical Details
+
+This project is built with:
+
+- **Electron**: Desktop application framework
+- **React**: User Interface library
+- **TypeScript**: Safer JavaScript
+
+For development instructions, see `docs/3_Running.md`.
