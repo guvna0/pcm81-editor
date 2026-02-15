@@ -13,7 +13,8 @@
     "test:watch": "vitest",
     "lint": "npm run typecheck",
     "format": "npm run format:check",
-    "format:check": "node -e \"console.log('format check placeholder: use editor formatter')\""
+    "format:check": "node -e \"console.log('format check placeholder: use editor formatter')\"",
+    "start": "electron ."
   },
   "dependencies": {
     "electron-store": "^10.0.0",
