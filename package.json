@@ -10,7 +10,10 @@
     "build": "npm run typecheck && vite build && tsc -p tsconfig.main.json",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.main.json --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "lint": "npm run typecheck",
+    "format": "npm run format:check",
+    "format:check": "node -e \"console.log('format check placeholder: use editor formatter')\""
   },
   "dependencies": {
     "electron-store": "^10.0.0",
